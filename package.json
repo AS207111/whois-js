@@ -1,0 +1,29 @@
+{
+  "name": "@as207111/whois",
+  "version": "1.0.0",
+  "description": "Geolocation, Proxy, VPN or Tor exit address detection, for free.",
+  "main": "src/whois.js",
+  "scripts": {
+    "test": "node src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AS207111/whois-js.git"
+  },
+  "keywords": [
+    "geolocation",
+    "proxy",
+    "vpn",
+    "whois",
+    "ip2location"
+  ],
+  "author": "René Preuß <rene@preuss.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AS207111/whois-js/issues"
+  },
+  "homepage": "https://github.com/AS207111/whois-js#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
