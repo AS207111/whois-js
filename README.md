@@ -17,9 +17,15 @@ Then initialize a new `Client` with your API Access Token and call the `lookup` 
 ```javascript
 const whois = require('@as207111/whois');
 
+// You can specify config defaults that will be applied to every request.
+// whois.defaults.accessToken = 'your-api-access-token';
+
 whois
-    .lookup({ip_address: '2001:67c:770::'})
-    .then(reponse => console.log(reponse.data));
+    .lookup({ip_address: '2001:67c:770::'}, {
+        // You can override defaults in the options parameter (optional)
+        accessToken: 'your-api-access-token',
+    })
+    .then(response => console.log(response.data));
 ```
 
 ## API Response Reference

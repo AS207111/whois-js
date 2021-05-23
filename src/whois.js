@@ -4,15 +4,16 @@ var axios = require("axios");
 var defaults = require('./defaults');
 
 class Client {
-    constructor(defaultConfig) {
-        this.config = Object.assign(defaults, defaultConfig);
+    constructor(defaultOptions) {
+        this.defaults = Object.assign(defaults, defaultOptions);
     }
 
-    lookup(params) {
+    lookup(params, options) {
+        options = Object.assign({}, this.defaults, options);
         return axios.get('https://whois.as207111.net/api/lookup', {
             params, headers: {
                 'Accept': 'application/json',
-                'Authorization': `Bearer ${this.config.accessToken}`,
+                'Authorization': `Bearer ${options.accessToken}`,
             }
         });
     }
