@@ -1,5 +1,11 @@
 # AS207111 Whois for JavaScript
 
+Geolocation, Proxy, VPN or Tor exit address detection, for free.
+
+AS207111 provides a free Whois service for content customization, advertising, digital rights management, compliance, fraud & proxy detection, security and more.
+
+You will always have the most accurate location data available for every API request, without having to worry about maintaining a local database. For Proxy, VPN or Tor exit address detection, we use machine learning & probability theory techniques using large datasets from different sources with 11,500+ networks from 2,200+ privacy providers.
+
 ## Installation
 
 The recommended way to install AS207111 Whois is through NPM.
@@ -12,7 +18,7 @@ npm install @as207111/whois --save
 
 First, request a free api access token from https://whois.as207111.net to get access to all api features, including all premium features, like privacy lookups.
 
-Then initialize a new `Client` with your API Access Token and call the `lookup` method to lookup any IPv4 or IPv6 address.
+Then initialize a new client with your API Access Token and call the `lookup` method to lookup any IPv4 or IPv6 address.
 
 ```javascript
 const whois = require('@as207111/whois');
