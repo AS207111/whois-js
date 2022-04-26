@@ -4,7 +4,8 @@
   "description": "Geolocation, Proxy, VPN or Tor exit address detection, for free.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "node src/test.js"
+    "test": "node src/test.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
