@@ -1,8 +1,8 @@
 {
   "name": "@as207111/whois",
-  "version": "1.0.2",
+  "version": "2.0.0-beta",
   "description": "Geolocation, Proxy, VPN or Tor exit address detection, for free.",
-  "main": "src/whois.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "node src/test.js"
   },
@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/AS207111/whois-js#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "node-fetch": "2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }
