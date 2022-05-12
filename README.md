@@ -1,5 +1,10 @@
 # AS207111 Whois for JavaScript
 
+<a href="https://www.npmjs.com/package/@as207111/whois"><img src="https://img.shields.io/npm/dt/@as207111/whois" alt="Total Downloads"></a>
+<a href="https://www.npmjs.com/package/@as207111/whois"><img src="https://img.shields.io/npm/v/@as207111/whois" alt="Latest Stable Version"></a>
+<a href="https://www.npmjs.com/package/@as207111/whois"><img src="https://img.shields.io/npm/l/@as207111/whois" alt="License"></a>
+<a href="https://ghostzero.dev/discord"><img src="https://discordapp.com/api/guilds/590942233126240261/embed.png?style=shield" alt="Discord"></a>
+
 Geolocation, Proxy, VPN or Tor exit address detection, for free.
 
 AS207111 provides a free Whois service for content customization, advertising, digital rights management, compliance, fraud & proxy detection, security and more.
