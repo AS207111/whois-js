@@ -25,18 +25,19 @@ First, request a free api access token from https://whois.as207111.net to get ac
 
 Then initialize a new client with your API Access Token and call the `lookup` method to lookup any IPv4 or IPv6 address.
 
+> We recommend using the client only server-side, so that your API access token is not exposed.
+
 ```javascript
-const whois = require('@as207111/whois');
+import {Client} from "@as207111/whois";
 
-// You can specify config defaults that will be applied to every request.
-// whois.defaults.accessToken = 'your-api-access-token';
+// instantiate a new api client with your api acces token
+const client = new Client("xxx|xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
 
-whois
-    .lookup({ip_address: '2001:67c:770::'}, {
-        // You can override defaults in the options parameter (optional)
-        accessToken: 'your-api-access-token',
-    })
-    .then(response => console.log(response.data));
+// lookup a given ipv4 or ipv6 address
+const response = await client.lookup("2001:67c:770::");
+
+// display the response
+console.log(response);
 ```
 
 ## API Response Reference
@@ -67,3 +68,19 @@ whois
   }
 }
 ```
+
+## Contributors
+
+I would like to thank the following contributors who are working on the active development of whois-js.
+
+[@ghostzero] (https://github.com/ghostzero)
+[@officialpiyush] (https://github.com/officialpiyush)
+
+## AS207111 Sponsors
+
+I would like to extend my thanks to the following sponsors for funding AS207111.
+If you are interested in becoming a sponsor, please visit my [Ko-fi](https://ko-fi.com/ene) page.
+
+### Premium Partners
+
+- [Be the first](https://ko-fi.com/ene)
