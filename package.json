@@ -1,6 +1,6 @@
 {
   "name": "@as207111/whois",
-  "version": "2.0.0-beta",
+  "version": "2.0.0-rc.1",
   "description": "Geolocation, Proxy, VPN or Tor exit address detection, for free.",
   "main": "dist/index.js",
   "scripts": {
